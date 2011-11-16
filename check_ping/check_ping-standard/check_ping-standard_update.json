@@ -1,0 +1,47 @@
+{ 
+  "command": "check_ping", 
+  "parseperfdata": [ 
+      {
+          "name": "rta",
+          "detail": [
+              {
+                  "position": "1",
+                  "name": "ping_time"
+              }, 
+              {
+                  "position": "2",
+                  "name": "warning_limit_rta"
+              }, 
+              {
+                  "position": "3",
+                  "name": "critical_limit_rta"
+              },
+              {
+                  "position": "4",
+                  "name": ""
+               }
+           ]
+       },
+      {
+          "name": "pl",
+          "detail": [
+              {
+                  "position": "1",
+                  "name": "packet_loss"
+              },
+              {
+                  "position": "2",
+                  "name": "warning_limit_pl"
+              },
+              {
+                  "position": "3",
+                  "name": "critical_limit_pl"
+              },
+              {
+                  "position": "4",
+                  "name": ""
+               }
+           ]
+       }
+   ] 
+} 
