@@ -6,7 +6,7 @@
           "detail": [
               {
                   "position": "1",
-                  "name": "ping_time"
+                  "name": "response_time"
               }, 
               {
                   "position": "2",
