@@ -5,14 +5,14 @@
           "name": "rta",
           "DS": [
               {
-		  "ds-name": "response_time",
+		  "dsname": "response_time",
                   "format": "GAUGE",
                   "heartbeat": "600",
 		  "min": "0",
 		  "max": "U"
               }, 
               {
-                  "ds-name": "warning_limit_rta",
+                  "dsname": "warning_limit_rta",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -20,14 +20,14 @@
 
               }, 
               {
-                  "ds-name": "critical_limit_rta",
+                  "dsname": "critical_limit_rta",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
               },
               {
-                  "ds-name": "other",
+                  "dsname": "other",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -39,28 +39,28 @@
           "name": "pl",
           "DS": [
               {
-                  "ds-name": "packet_loss",
+                  "dsname": "packet_loss",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
               },
               {
-                  "ds-name": "warning_limit_pl",
+                  "dsname": "warning_limit_pl",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
               },
               {
-                  "ds-name": "critical_limit_pl",
+                  "dsname": "critical_limit_pl",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
               },
               {
-                  "ds-name": "other",
+                  "dsname": "other",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
