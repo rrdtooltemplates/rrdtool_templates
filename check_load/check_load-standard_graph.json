@@ -1,5 +1,5 @@
 {
-  "name": "Ping area",
+  "name": "Load area",
   "author name": "David Durieux",
   "author email": "d.durieux@siprossii.com",
   "data": [
@@ -13,7 +13,7 @@
           ],
           "labels": [
               {
-                  "title": "Ping",
+                  "title": "System load",
                   "vertical-label": ""
               }
           ],
@@ -90,13 +90,27 @@
               }
           ],
           "data": [
-              "DEF:'response_time'=[[RRDFILE]]:'response_time':LAST",
-              "AREA:'response_time#00FF00':'response_time'",
-              "GPRINT:'response_time':LAST:'Last\\: %2.2lf ms'",
-              "GPRINT:'response_time':MIN:'Min\\: %2.2lf ms'",
-              "GPRINT:'response_time':MAX:'Max\\: %2.2lf ms'",
-              "GPRINT:'response_time':AVERAGE:'Avg\\: %2.2lf ms\\l'",
-              "CDEF:'1response_time'='response_time',0.98,*"
+              "DEF:'load1minute_current'=[[RRDFILE]]:'load1minute_current':AVERAGE",
+              "DEF:'load5minute_current'=[[RRDFILE]]:'load5minute_current':AVERAGE",
+              "DEF:'load15minute_current'=[[RRDFILE]]:'load15minute_current':AVERAGE",
+              "AREA:'load1minute_current#ff0000':'1-min load avgs'",
+              "AREA:'load5minute_current#00ff00':'5-min load avgs'",
+              "AREA:'load15minute_current#0000dd':'15-min load avgs'",
+              "GPRINT:'load1minute_current':AVERAGE:'Avg\\:%3.2lf'",
+              "GPRINT:'load1minute_current':MAX:'Max\\:%3.2lf\n'",
+              "GPRINT:'load5minute_current':AVERAGE:'Avg\\:%3.2lf'",
+              "GPRINT:'load5minute_current':MAX:'Max\\:%3.2lf\n'",
+              "GPRINT:'load15minute_current':AVERAGE:'Avg\\:%3.2lf'",
+              "GPRINT:'load15minute_current':MAX:'Max\\:%3.2lf\n'",
+              "HRULE:'load1minute_warning#ff0000':'load1minute_warning\\l'",
+              "HRULE:'load1minute_critical#ff0000':'load1minute_critical\\l'",
+              "HRULE:'load5minute_warning#00ff00':'load5minute_warning\\l'",
+              "HRULE:'load5minute_critical#00ff00':'load5minute_critical\\l'",
+              "HRULE:'load15minute_warning#0000dd':'load15minute_warning\\l'",
+              "HRULE:'load15minute_critical#0000dd':'load15minute_critical\\l'",
+              "CDEF:'load1minute_current'='load1minute_current',0.98,*",
+              "CDEF:'load5minute_current'='load5minute_current',0.98,*",
+              "CDEF:'load15minute_current'='load15minute_current',0.98,*"
           ]
        }
    ]

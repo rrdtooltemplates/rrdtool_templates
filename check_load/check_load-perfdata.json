@@ -1,0 +1,86 @@
+{ 
+  "command": "check_load", 
+  "parseperfdata": [ 
+      {
+          "name": "load1",
+          "DS": [
+              {
+		            "dsname": "load1minute_current",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		            "min": "0",
+		            "max": "U"
+              }, 
+              {
+                  "dsname": "load1minute_warning",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+
+              }, 
+              {
+                  "dsname": "load1minute_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       },
+      {
+          "name": "load5",
+          "DS": [
+              {
+		            "dsname": "load5minute_current",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		            "min": "0",
+		            "max": "U"
+              }, 
+              {
+                  "dsname": "load5minute_warning",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+
+              }, 
+              {
+                  "dsname": "load5minute_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       },
+       {
+          "name": "load15",
+          "DS": [
+              {
+		            "dsname": "load15minute_current",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		            "min": "0",
+		            "max": "U"
+              }, 
+              {
+                  "dsname": "load15minute_warning",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+
+              }, 
+              {
+                  "dsname": "load15minute_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       }
+   ] 
+} 
