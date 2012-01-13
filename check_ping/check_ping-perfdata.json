@@ -1,0 +1,72 @@
+{ 
+  "command": "check_ping", 
+  "parseperfdata": [ 
+      {
+          "name": "rta",
+          "DS": [
+              {
+		  "ds-name": "response_time",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "U"
+              }, 
+              {
+                  "ds-name": "warning_limit_rta",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+
+              }, 
+              {
+                  "ds-name": "critical_limit_rta",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+              },
+              {
+                  "ds-name": "other",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       },
+      {
+          "name": "pl",
+          "DS": [
+              {
+                  "ds-name": "packet_loss",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+              },
+              {
+                  "ds-name": "warning_limit_pl",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+              },
+              {
+                  "ds-name": "critical_limit_pl",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+              },
+              {
+                  "ds-name": "other",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       }
+   ] 
+} 
