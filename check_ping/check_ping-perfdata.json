@@ -27,7 +27,7 @@
                   "max": "U"
               },
               {
-                  "dsname": "other",
+                  "dsname": "other_rta",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -60,7 +60,7 @@
                   "max": "U"
               },
               {
-                  "dsname": "other",
+                  "dsname": "other_pl",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",

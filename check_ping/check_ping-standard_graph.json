@@ -13,7 +13,7 @@
           ],
           "labels": [
               {
-                  "title": "",
+                  "title": "Ping",
                   "vertical-label": ""
               }
           ],
@@ -92,13 +92,11 @@
           "data": [
               "DEF:'response_time'=[[RRDFILE]]:'response_time':AVERAGE",
               "AREA:'response_time#00FF00':'response_time'",
-              "GPRINT:'response_time':LAST:'Last\: %2.2lf ms'",
-              "GPRINT:'response_time':MIN:'Min\: %2.2lf ms'",
-              "GPRINT:'response_time':MAX:'Max\: %2.2lf ms'",
-              "GPRINT:'response_time':AVERAGE:'Avg\: %2.2lf ms\l'",
-              "CDEF:'1response_time'='response_time',0.98,*",
-	      "HRULE ..."
-
+              "GPRINT:'response_time':LAST:'Last\\: %2.2lf ms'",
+              "GPRINT:'response_time':MIN:'Min\\: %2.2lf ms'",
+              "GPRINT:'response_time':MAX:'Max\\: %2.2lf ms'",
+              "GPRINT:'response_time':AVERAGE:'Avg\\: %2.2lf ms\\l'",
+              "CDEF:'1response_time'='response_time',0.98,*"
           ]
        }
    ]
