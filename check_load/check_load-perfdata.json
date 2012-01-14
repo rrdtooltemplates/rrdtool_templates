@@ -5,14 +5,14 @@
           "name": "load1",
           "DS": [
               {
-		            "dsname": "load1minute_current",
+                  "dsname": "load1min_current",
                   "format": "GAUGE",
                   "heartbeat": "600",
-		            "min": "0",
-		            "max": "U"
+		  "min": "0",
+		  "max": "U"
               }, 
               {
-                  "dsname": "load1minute_warning",
+                  "dsname": "load1min_warning",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -20,7 +20,14 @@
 
               }, 
               {
-                  "dsname": "load1minute_critical",
+                  "dsname": "load1min_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               },
+              {
+                  "dsname": "load1min_other",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -32,14 +39,14 @@
           "name": "load5",
           "DS": [
               {
-		            "dsname": "load5minute_current",
+		  "dsname": "load5min_current",
                   "format": "GAUGE",
                   "heartbeat": "600",
-		            "min": "0",
-		            "max": "U"
+		  "min": "0",
+		  "max": "U"
               }, 
               {
-                  "dsname": "load5minute_warning",
+                  "dsname": "load5min_warning",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -47,26 +54,34 @@
 
               }, 
               {
-                  "dsname": "load5minute_critical",
+                  "dsname": "load5min_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               },
+              {
+                  "dsname": "load5min_other",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
                }
+
            ]
        },
        {
           "name": "load15",
           "DS": [
               {
-		            "dsname": "load15minute_current",
+		  "dsname": "load15min_current",
                   "format": "GAUGE",
                   "heartbeat": "600",
-		            "min": "0",
-		            "max": "U"
+		  "min": "0",
+		  "max": "U"
               }, 
               {
-                  "dsname": "load15minute_warning",
+                  "dsname": "load15min_warning",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
@@ -74,12 +89,20 @@
 
               }, 
               {
-                  "dsname": "load15minute_critical",
+                  "dsname": "load15min_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               },
+              {
+                  "dsname": "load15min_other",
                   "format": "GAUGE",
                   "heartbeat": "600",
                   "min": "0",
                   "max": "U"
                }
+
            ]
        }
    ] 

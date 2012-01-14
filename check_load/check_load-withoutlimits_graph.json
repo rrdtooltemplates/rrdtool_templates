@@ -91,29 +91,17 @@
           ],
           "data": [
               "DEF:'load1min_current'=[[RRDFILE]]:'load1min_current':AVERAGE",
-              "DEF:'load1min_warning'=[[RRDFILE]]:'load1min_warning':AVERAGE",
-              "DEF:'load1min_critical'=[[RRDFILE]]:'load1min_critical':AVERAGE",
               "DEF:'load5min_current'=[[RRDFILE]]:'load5min_current':AVERAGE",
-              "DEF:'load5min_warning'=[[RRDFILE]]:'load5min_warning':AVERAGE",
-              "DEF:'load5min_critical'=[[RRDFILE]]:'load5min_critical':AVERAGE",
               "DEF:'load15min_current'=[[RRDFILE]]:'load15min_current':AVERAGE",
-              "DEF:'load15min_warning'=[[RRDFILE]]:'load15min_warning':AVERAGE",
-              "DEF:'load15min_critical'=[[RRDFILE]]:'load15min_critical':AVERAGE",
               "AREA:'load1min_current#ff0000':'1-min load avgs'",
               "GPRINT:'load1min_current':AVERAGE:'Avg\\:%2.2lf'",
               "GPRINT:'load1min_current':MAX:'Max\\:%2.2lf\\n'",
-              "LINE:'load1min_warning#ff0000':'warning'",
-              "LINE:'load1min_critical#ff0000':'critical\\n'",
               "AREA:'load5min_current#00ff00':'5-min load avgs'",
               "GPRINT:'load5min_current':AVERAGE:'Avg\\:%2.2lf'",
               "GPRINT:'load5min_current':MAX:'Max\\:%2.2lf\\n'",
-              "LINE:'load5min_warning#00ff00':'warning'",
-              "LINE:'load5min_critical#00ff00':'critical\\n'",
               "AREA:'load15min_current#0000dd':'15-min load avgs'",
               "GPRINT:'load15min_current':AVERAGE:'Avg\\:%2.2lf'",
-              "GPRINT:'load15min_current':MAX:'Max\\:%2.2lf\\l'",
-              "LINE:'load15min_warning#0000dd':'warning'",
-              "LINE:'load15min_critical#0000dd':'critical\\n'"
+              "GPRINT:'load15min_current':MAX:'Max\\:%2.2lf\\l'"
           ]
        }
    ]
