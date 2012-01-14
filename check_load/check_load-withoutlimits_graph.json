@@ -93,16 +93,16 @@
               "DEF:'load1min_current'=[[RRDFILE]]:'load1min_current':AVERAGE",
               "DEF:'load5min_current'=[[RRDFILE]]:'load5min_current':AVERAGE",
               "DEF:'load15min_current'=[[RRDFILE]]:'load15min_current':AVERAGE",
-              "AREA:'load1min_current#ff000050':'1-min load avgs'",
-              "LINE:'load1min_current#ff0000':''",
+              "AREA:'load1min_current#ff000050':''",
+              "LINE:'load1min_current#ff0000':'1-min load avgs'",
               "GPRINT:'load1min_current':AVERAGE:'Avg\\:%2.2lf'",
               "GPRINT:'load1min_current':MAX:'Max\\:%2.2lf\\n'",
-              "AREA:'load5min_current#00ff0050':'5-min load avgs'",
-              "LINE:'load5min_current#00ff00':''",
+              "AREA:'load5min_current#00ff0050':''",
+              "LINE:'load5min_current#00ff00':'5-min load avgs'"
               "GPRINT:'load5min_current':AVERAGE:'Avg\\:%2.2lf'",
               "GPRINT:'load5min_current':MAX:'Max\\:%2.2lf\\n'",
-              "AREA:'load15min_current#0000dd50':'15-min load avgs'",
-              "LINE:'load15min_current#0000dd':''",
+              "AREA:'load15min_current#0000dd50':''",
+              "LINE:'load15min_current#0000dd':'15-min load avgs'",
               "GPRINT:'load15min_current':AVERAGE:'Avg\\:%2.2lf'",
               "GPRINT:'load15min_current':MAX:'Max\\:%2.2lf\\l'"
           ]
