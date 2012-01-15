@@ -97,9 +97,9 @@
               "GPRINT:'users_current':LAST:'Last\\: %2.2lf ms'",
               "GPRINT:'users_current':MIN:'Min\\: %2.2lf ms'",
               "GPRINT:'users_current':MAX:'Max\\: %2.2lf ms'",
-              "GPRINT:'users_current':AVERAGE:'Avg\\: %2.2lf ms\\l'"
+              "GPRINT:'users_current':AVERAGE:'Avg\\: %2.2lf ms\\l'",
               "LINE:'users_warning#ff7f00':'warning'",
-              "LINE:'users_critical#ff0000':'critical\\n'",
+              "LINE:'users_critical#ff0000':'critical\\n'"
           ]
        }
    ]
