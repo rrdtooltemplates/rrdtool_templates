@@ -1,0 +1,39 @@
+{ 
+  "command": "check_users", 
+  "parseperfdata": [ 
+      {
+          "name": "users",
+          "DS": [
+              {
+		  "dsname": "users_current",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "U"
+              }, 
+              {
+                  "dsname": "users_warning",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+
+              }, 
+              {
+                  "dsname": "users_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+              },
+              {
+                  "dsname": "users_other",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "U"
+               }
+           ]
+       }
+   ] 
+} 

@@ -1,0 +1,106 @@
+{
+  "name": "Users area",
+  "author name": "David Durieux",
+  "author email": "d.durieux@siprossii.com",
+  "data": [
+      {
+	  "time range": [
+	      {
+	          "start": "",
+		  "end": "",
+		  "step": ""
+	      }
+          ],
+          "labels": [
+              {
+                  "title": "Users",
+                  "vertical-label": ""
+              }
+          ],
+          "size": [
+              {
+                  "width": "",
+                  "height": "",
+                  "only-graph": "0",
+                  "full-size-mode": ""
+              }
+          ],
+          "limits": [
+              {
+                  "upper-limit": "",
+                  "lower-limit": "",
+                  "rigid": "0",
+                  "alt-autoscale": "0",
+                  "alt-autoscale-min": "0",
+                  "alt-autoscale-max": "0",
+                  "no-gridfit": "0"
+              }
+          ],
+          "x-axis": [
+              {
+                  "x-grid": ""
+              }
+          ],
+          "y-axis": [
+              {
+                  "y-grid": "",
+                  "alt-y-grid": "0",
+                  "logarithmic": "0",
+                  "units-exponent": "",
+                  "units-length": "",
+                  "units": "si"
+              }
+          ],
+          "right y axis": [
+              {
+                  "right-axis": "",
+                  "right-axis-format": ""
+              }
+          ],
+          "legend": [
+              {
+                  "no-legend": "0",
+                  "force-rules-legend": "0",
+                  "legend-position": "south",
+                  "legend-direction": "topdown"
+              }
+          ],
+          "miscellaneous": [
+              {
+                  "lazy": "0",
+                  "daemon": "",
+                  "imginfo": "",
+                  "color": [
+			"BACK#e1cc7b",
+			"CANVAS#f1f1f1"
+		  ],
+                  "grid-dash": "on",
+                  "border": "2",
+                  "dynamic-labels": "0",
+                  "zoom": "",
+                  "font": "",
+                  "font-render-mode": "normal",
+                  "pango-markup": "",
+                  "graph-render-mode": "normal",
+                  "slope-mode": "0",
+                  "imgformat": "PNG",
+                  "tabwidth": "40",
+                  "base": "1024",
+                  "watermark": ""
+              }
+          ],
+          "data": [
+              "DEF:'users_current'=[[RRDFILE]]:'users_current':AVERAGE",
+              "DEF:'users_warning'=[[RRDFILE]]:'users_warning':AVERAGE",
+              "DEF:'users_critical'=[[RRDFILE]]:'users_critical':AVERAGE",
+              "AREA:'users_current#00ff00':'users_current'",
+              "GPRINT:'users_current':LAST:'Last\\: %2.2lf ms'",
+              "GPRINT:'users_current':MIN:'Min\\: %2.2lf ms'",
+              "GPRINT:'users_current':MAX:'Max\\: %2.2lf ms'",
+              "GPRINT:'users_current':AVERAGE:'Avg\\: %2.2lf ms\\l'"
+              "LINE:'users_warning#ff7f00':'warning'",
+              "LINE:'users_critical#ff0000':'critical\\n'",
+          ]
+       }
+   ]
+}
