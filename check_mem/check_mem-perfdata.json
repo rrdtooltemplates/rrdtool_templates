@@ -1,0 +1,17 @@
+{ 
+  "command": "check_mem", 
+  "parseperfdata": [ 
+      {
+          "name": "pct",
+          "DS": [
+              {
+                  "dsname": "memory_used",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "100"
+              }
+           ]
+       }
+   ] 
+} 
