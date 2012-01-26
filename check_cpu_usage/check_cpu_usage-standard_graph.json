@@ -1,0 +1,114 @@
+{
+  "name": "CPU usage",
+  "author name": "David Durieux",
+  "author email": "d.durieux@siprossii.com",
+  "data": [
+      {
+	  "time range": [
+	      {
+	          "start": "",
+		  "end": "",
+		  "step": ""
+	      }
+          ],
+          "labels": [
+              {
+                  "title": "CPU usage",
+                  "vertical-label": ""
+              }
+          ],
+          "size": [
+              {
+                  "width": "",
+                  "height": "",
+                  "only-graph": "0",
+                  "full-size-mode": ""
+              }
+          ],
+          "limits": [
+              {
+                  "upper-limit": "0",
+                  "lower-limit": "100",
+                  "rigid": "0",
+                  "alt-autoscale": "0",
+                  "alt-autoscale-min": "0",
+                  "alt-autoscale-max": "0",
+                  "no-gridfit": "0"
+              }
+          ],
+          "x-axis": [
+              {
+                  "x-grid": ""
+              }
+          ],
+          "y-axis": [
+              {
+                  "y-grid": "",
+                  "alt-y-grid": "0",
+                  "logarithmic": "0",
+                  "units-exponent": "",
+                  "units-length": "",
+                  "units": "si"
+              }
+          ],
+          "right y axis": [
+              {
+                  "right-axis": "",
+                  "right-axis-format": ""
+              }
+          ],
+          "legend": [
+              {
+                  "no-legend": "0",
+                  "force-rules-legend": "0",
+                  "legend-position": "south",
+                  "legend-direction": "topdown"
+              }
+          ],
+          "miscellaneous": [
+              {
+                  "lazy": "0",
+                  "daemon": "",
+                  "imginfo": "",
+                  "color": [
+			"BACK#e1cc7b",
+			"CANVAS#f1f1f1"
+		  ],
+                  "grid-dash": "on",
+                  "border": "2",
+                  "dynamic-labels": "0",
+                  "zoom": "",
+                  "font": "",
+                  "font-render-mode": "normal",
+                  "pango-markup": "",
+                  "graph-render-mode": "normal",
+                  "slope-mode": "0",
+                  "imgformat": "PNG",
+                  "tabwidth": "40",
+                  "base": "1024",
+                  "watermark": ""
+              }
+          ],
+          "data": [
+              "DEF:'usage'=[[RRDFILE]]:'usage':AVERAGE",
+              "DEF:'usage_warning'=[[RRDFILE]]:'usage_warning':AVERAGE",
+              "DEF:'usage_critical'=[[RRDFILE]]:'usage_critical':AVERAGE",
+              "DEF:'user'=[[RRDFILE]]:'user':AVERAGE",
+              "DEF:'system'=[[RRDFILE]]:'system':AVERAGE",
+              "AREA:'usage#ff0000':'CPU Usage'",
+              "GPRINT:'usage':AVERAGE:'Avg\\:%2.2lf'",
+              "GPRINT:'usage':MAX:'Max\\:%2.2lf'",
+              "LINE:'usage_warning#ff0000':'warning'",
+              "LINE:'usage_critical#ff0000':'critical\\n'",
+              "AREA:'user#fecb3370':''",
+              "LINE:'user#fecb33':'User'",
+              "GPRINT:'user':AVERAGE:'Avg\\:%2.2lf'",
+              "GPRINT:'user':MAX:'Max\\:%2.2lf\\n'",
+              "AREA:'system#cd734750':''",
+              "LINE:'system#cd7347':'System'",
+              "GPRINT:'system':AVERAGE:'Avg\\:%2.2lf'",
+              "GPRINT:'system':MAX:'Max\\:%2.2lf\\l'"
+          ]
+       }
+   ]
+}

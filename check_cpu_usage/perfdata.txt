@@ -1,0 +1,1 @@
+cpu_usage=2%;80;95; cpu_user=0%; cpu_system=2%;

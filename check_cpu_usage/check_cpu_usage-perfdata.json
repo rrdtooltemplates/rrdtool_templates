@@ -1,0 +1,56 @@
+{ 
+  "command": "check_cpu_usage", 
+  "parseperfdata": [ 
+      {
+          "name": "cpu_usage",
+          "DS": [
+              {
+                  "dsname": "usage",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "100"
+              }, 
+              {
+                  "dsname": "usage_warning",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "100"
+
+              }, 
+              {
+                  "dsname": "usage_critical",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+                  "min": "0",
+                  "max": "100"
+               }
+           ]
+       },
+      {
+          "name": "cpu_user",
+          "DS": [
+              {
+		  "dsname": "user",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "100"
+              }
+           ]
+       },
+       {
+          "name": "cpu_system",
+          "DS": [
+              {
+		  "dsname": "system",
+                  "format": "GAUGE",
+                  "heartbeat": "600",
+		  "min": "0",
+		  "max": "100"
+              }
+           ]
+       }
+   ] 
+} 
